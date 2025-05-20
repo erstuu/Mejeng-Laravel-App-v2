@@ -1,0 +1,1 @@
+<img src="{{ asset('storage/images/Mejeng_Travel_Story.png') }}" alt="Logo" {{ $attributes }}>
