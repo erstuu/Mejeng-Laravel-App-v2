@@ -47,7 +47,7 @@
                         </p>
                     </div>
                     <div>
-                        <a href="{{ route('post.content.show', $featured->id) }}" class="text-blue-600 hover:underline font-medium">Baca Selengkapnya →</a>
+                        <a href="{{ route('post.content.show', $featured->slug) }}" class="text-blue-600 hover:underline font-medium">Baca Selengkapnya →</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                                 <p class="text-gray-700 mb-4">
                                     {{ \Illuminate\Support\Str::limit($post->content, 120, '...') }}
                                 </p>
-                                <a href="{{ route('post.content.show', $post->id) }}" class="text-blue-600 hover:underline font-medium">Baca Selengkapnya →</a>
+                                <a href="{{ route('post.content.show', $post->slug) }}" class="text-blue-600 hover:underline font-medium">Baca Selengkapnya →</a>
                             </div>
                         </div>
                     @endforeach
@@ -102,7 +102,7 @@
                                     <p class="text-gray-700 mb-4">
                                         {{ \Illuminate\Support\Str::limit($post->content, 120, '...') }}
                                     </p>
-                                    <a href="{{ route('post.content.show', $post->id) }}" class="text-blue-600 hover:underline font-medium">Baca Selengkapnya →</a>
+                                    <a href="{{ route('post.content.show', $post->slug) }}" class="text-blue-600 hover:underline font-medium">Baca Selengkapnya →</a>
                                 </div>
                             </div>
                         @endif

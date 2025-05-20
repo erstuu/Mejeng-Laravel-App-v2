@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [LandingPageController::class, 'index'])->name("home");
-Route::get('/post/content/{post}', [LandingPageController::class, 'show'])->name('post.content.show');
+Route::get('/post/content/{slug}', [LandingPageController::class, 'show'])->name('post.content.show');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
